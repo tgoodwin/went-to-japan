@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  font-family: sans-serif;
+}
+img {
+  width: 100%;
+}
+
+#my-canvas {
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+  position: fixed;
+  z-index: -5;
+}
+
+.intro {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  height, width: auto;
+  font-family: arial;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 300%;
+  color: white;
+  z-index: -1;
+}
+.photo-list {
+  opacity: 0.95;
+  font-family: arial;
+  font-size: 100%;
+  font-weight: bold;
+  list-style: none;
+  padding-top: 100vh;
+  padding-left: 0;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.photo-list a{
+  text-decoration: none;
+  color: #aaaaaa;
+}
+.photo-list a:hover { text-decoration: underline; }
+.photo-list ul {
+  padding: 0;
+}
+.photo-list li {
+  padding-bottom: 200px;
+  width: 100%;
+}
