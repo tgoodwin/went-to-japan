@@ -13,7 +13,7 @@ my_image.onload = function() {
 };
 
 var is_processing = false;
-var parameters = { amount: 3, seed: 50, iterations: 20, quality: 50 };
+var parameters = { amount: 3, seed: 1, iterations: 20, quality: 50 };
 
 // draw the image on the canvas
 ctx.drawImage( my_image, 0,0, my_canvas.clientWidth, my_canvas.clientHeight );
@@ -45,7 +45,7 @@ function generate(){
 
 function set_parameters( x ){
   parameters.amount = parseInt(35 + (x % 20));
-  parameters.seed = parseInt(30 + (x % 10));
+  if(++parameters.seed > 98) { parameters.seed -= 98; }
   parameters.iterations = parseInt(50 - (x % 10));
   parameters.quality = parseInt(20 + (x % 40));
 }
